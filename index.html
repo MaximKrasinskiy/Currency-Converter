@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертер валют</h1>
+        <div class="box">
+            <div class="currency__box">
+                <select name="currency" class="currency">
+                    <option value="BYN">BYN:</option>
+                    <option value="RUB">RUB:</option>
+                    <option value="USD">USD:</option>
+                    <option value="EUR">EUR:</option>
+                    <option value="CYN">CYN:</option>
+                </select>
+                <input type="number" id="num">
+            </div>
+            <div class="block__result">
+            <div class="second__box">
+                <label for="first"  class="first-label">RUB:</label>
+                <input type="number"  id="first" disabled>
+            </div>
+            <div class="third__box">
+                <label for="two" class="second-label">USD:</label>
+                <input type="number"  id="second" disabled>
+            </div>
+             <div class="three__box">
+                <label for="third" class="third-label">EUR:</label>
+                <input type="number"  id="third" disabled>
+            </div>
+            <div class="four__box">
+                <label for="fourth" class="fourth-label">CYN:</label>
+                <input type="number"  id="fourth" disabled>
+            </div>
+        </div>
+        </div>
+        <div class="box__button">
+            <button  class="btn" id="btn">Конвертировать</button>
+            <button  class="btn" id="btn-2">Удалить</button>
+        </div>
+    </div>
+    <input type="text" id="max">
+    <script src="script.js"></script>
+</body>
+
+</html>
